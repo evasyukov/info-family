@@ -2,7 +2,7 @@
   <Header />
 
   <div class="preview-info">
-    <!-- Персональные данные -->
+    <!-- персональные данные -->
     <div class="preview-info_person">
       <span>Персональные данные</span>
       <div class="preview-info_person_text">Василий, 30 лет</div>
@@ -54,7 +54,7 @@ import Footer from "./Footer.vue"
       gap: 20px;
 
       margin-top: 20px;
-      
+
       .block {
         width: fit-content;
         height: 40px;

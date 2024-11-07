@@ -2,7 +2,9 @@
   <Header />
 
   <div class="filling-form">
-    <!-- Персональные данные -->
+
+
+    <!-- персональные данные -->
     <div class="filling-form_person">
       <span>Персональные данные</span>
       <div class="filling-form_person_input">
@@ -11,8 +13,9 @@
       </div>
     </div>
 
-    <!-- Дети -->
+    <!-- дети -->
     <div class="filling-form_children">
+
       <!-- шапка детей -->
       <div class="filling-form_children_header">
         <span>Дети (макс. 5)</span>
