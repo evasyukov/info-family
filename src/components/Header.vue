@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div class="header_logo">
-      <div class="test"></div>
+      <img src="../assets/logo.svg" alt="logo"  width="93" height="29"/>
     </div>
 
     <div class="header_pages">
@@ -28,9 +28,11 @@
     height: 80%;
 
     position: relative;
-
     left: 5vw;
-    background-color: #00ff0032;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &_pages {
