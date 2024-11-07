@@ -6,7 +6,7 @@
     <div class="filling-form_person">
       <span>Персональные данные</span>
       <div class="filling-form_person_input">
-        <InputForm label="Имя"/>
+        <InputForm label="Имя" />
         <InputForm label="Возраст" />
       </div>
     </div>
@@ -31,8 +31,8 @@
         v-for="(child, index) in children"
         :key="index"
       >
-      <InputForm v-model="child.name" label="Имя" />
-      <InputForm v-model="child.age" label="Возраст" />
+        <InputForm v-model="child.name" label="Имя" />
+        <InputForm v-model="child.age" label="Возраст" />
         <div class="delete" @click="removeChild(index)">
           <span>Удалить</span>
         </div>
@@ -90,7 +90,7 @@ const removeChild = (index) => {
 
   &_children {
     width: 615px;
-    margin-top: 30px;
+    margin-top: 50px;
 
     &_header {
       display: flex;
@@ -99,12 +99,14 @@ const removeChild = (index) => {
 
       .add-button {
         background: none;
-        border: 1px solid #1e90ff;
-        color: #1e90ff;
+        color: #01a7fd;
         padding: 5px 10px;
+
+        border: 1px solid #01a7fd;
         border-radius: 15px;
+
         cursor: pointer;
-        font-size: 0.9rem;
+        font-size: 18px;
 
         &:disabled {
           opacity: 0.5;
@@ -116,15 +118,17 @@ const removeChild = (index) => {
     &_input {
       display: flex;
       align-items: center;
-      //   justify-content: flex-start;
       gap: 10px;
       margin-top: 15px;
 
       .delete {
         color: #1e90ff;
         cursor: pointer;
-        font-size: 0.9rem;
-        text-decoration: underline;
+
+        span {
+          font-size: 16px;
+          font-weight: 400;
+        }
       }
     }
   }
