@@ -1,16 +1,9 @@
 <template>
-  <Header />
-
-
-
-  <Footer />
+  <FillingForm />
 </template>
 
 <script setup>
-import Header from './components/Header.vue'
-import Footer from './components/Footer.vue';
+import FillingForm from "./components/FillingForm.vue"
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>
