@@ -5,8 +5,8 @@
     </div>
 
     <div class="header_pages">
-        <div class="link">Форма</div>
-        <div class="link">Превью</div>
+        <router-link to="/info-family" class="link">Форма</router-link>
+        <router-link to="/preview" class="link">Превью</router-link>
     </div>
   </div>
 </template>
@@ -49,6 +49,8 @@
 
       color: #1111117a;
       cursor: pointer;
+
+      text-decoration: none;
 
       &:hover {
         color: #111111;

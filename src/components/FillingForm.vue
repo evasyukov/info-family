@@ -1,8 +1,6 @@
 <template>
-  <Header />
-
+  
   <div class="filling-form">
-
 
     <!-- персональные данные -->
     <div class="filling-form_person">
@@ -42,8 +40,6 @@
       </div>
     </div>
   </div>
-
-  <Footer />
 </template>
 
 <script setup>

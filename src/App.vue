@@ -1,11 +1,12 @@
 <template>
-  <FillingForm />
-  <!-- <PreviewInfo /> -->
+  <Header />
+  <router-view></router-view>
+  <Footer />
 </template>
 
 <script setup>
-import FillingForm from "./components/FillingForm.vue"
-import PreviewInfo from "./components/PreviewInfo.vue"
+import Header from "./components/Header.vue"
+import Footer from "./components/Footer.vue"
 </script>
 
 <style lang="scss" scoped></style>

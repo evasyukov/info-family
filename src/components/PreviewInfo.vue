@@ -1,6 +1,5 @@
 <template>
-  <Header />
-
+    
   <div class="preview-info">
     <!-- персональные данные -->
     <div class="preview-info_person">
@@ -17,8 +16,6 @@
       </div>
     </div>
   </div>
-
-  <Footer />
 </template>
 
 <script setup>
