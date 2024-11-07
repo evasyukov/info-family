@@ -1,5 +1,32 @@
-# Vue 3 + Vite
+# Тестовое задание в компанию Alef Development
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+[Демо](https://evasyukov.github.io/info-family/)
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## Используемый стек:
+- Vue3 Composition API
+- SCSS
+- JavaSctipt
+- Vite
+
+Переход между страницами реализован через vue-router
+
+## Установка и запуск проекта
+1. Клонируйте репозиторий:
+    ```bash
+    https://github.com/evasyukov/info-family.git
+    ```
+
+2. Перейдите в директорию проекта:
+    ```bash
+    cd info-family
+    ```
+
+3. Установите зависимости:
+    ```bash
+    npm install
+    ```
+
+4. Запустите проект:
+    ```bash
+    npm run dev
+    ```
