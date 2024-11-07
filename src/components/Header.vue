@@ -5,8 +5,8 @@
     </div>
 
     <div class="header_pages">
-        <div class="form"></div>
-        <div class="preview"></div>
+        <div class="link">Форма</div>
+        <div class="link">Превью</div>
     </div>
   </div>
 </template>
@@ -16,9 +16,7 @@
 <style lang="scss" scoped>
 .header {
   width: 100%;
-  height: 90px;
-
-//   background-color: #ff000030;
+  height: 8vh;
 
   display: flex;
   align-items: center;
@@ -26,24 +24,36 @@
   border-bottom: 1px solid #e8e8e8;
 
   &_logo {
-    width: 100px;
+    width: 7vw;
     height: 80%;
 
     position: relative;
 
-    left: 100px;
-    background-color: #00ff00;
+    left: 5vw;
+    background-color: #00ff0032;
   }
 
   &_pages {
-    width: 170px;
+    width: 12vw;
     height: 80%;
 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
     position: relative;
+    margin-left: 35vw;
 
-    left: 750px;
+    .link {
+      font-size: 1.1vw;
 
-    background-color: #0000ff;
+      color: #1111117a;
+      cursor: pointer;
+
+      &:hover {
+        color: #111111;
+      }
+    }
   }
 }
 </style>

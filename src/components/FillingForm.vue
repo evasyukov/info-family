@@ -90,15 +90,17 @@ const removeChild = (index) => {
 
   &_children {
     width: 615px;
-    margin-top: 50px;
+    margin-top: 60px;
 
     &_header {
       display: flex;
       justify-content: space-between;
       align-items: center;
 
+      height: 35px;
+
       .add-button {
-        background: none;
+        background: transparent;
         color: #01a7fd;
         padding: 5px 10px;
 
@@ -107,10 +109,13 @@ const removeChild = (index) => {
 
         cursor: pointer;
         font-size: 18px;
+        user-select: none;
 
+        &:hover {
+          background: #01a9fd23;
+        }
         &:disabled {
-          opacity: 0.5;
-          cursor: not-allowed;
+          display: none;
         }
       }
     }
@@ -124,6 +129,7 @@ const removeChild = (index) => {
       .delete {
         color: #1e90ff;
         cursor: pointer;
+        user-select: none;
 
         span {
           font-size: 16px;
@@ -132,10 +138,5 @@ const removeChild = (index) => {
       }
     }
   }
-}
-
-span {
-  font-size: 20px;
-  font-weight: 600;
 }
 </style>
