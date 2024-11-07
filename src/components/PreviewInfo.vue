@@ -1,26 +1,53 @@
 <template>
-    
   <div class="preview-info">
     <!-- персональные данные -->
     <div class="preview-info_person">
       <span>Персональные данные</span>
-      <div class="preview-info_person_text">Василий, 30 лет</div>
+      <div class="preview-info_person_text" v-if="personalInfo.name">
+        {{ personalInfo.name }}, {{ personalInfo.age }} лет
+      </div>
     </div>
 
     <!-- данные о детях -->
     <div class="preview-info_children">
       <span>Дети</span>
       <div class="preview-info_children_text">
-        <div class="block">Петр, 14 лет</div>
-        <div class="block">Василий, 14 лет</div>
+        <div class="block" v-for="(child, index) in children" :key="index">
+          {{ child.name }}, {{ child.age }} лет
+        </div>
       </div>
     </div>
+
+    <button style="margin-top: 100px;" @click="clearStorage()">Очистить хранилище</button>
   </div>
 </template>
 
 <script setup>
-import Header from "./Header.vue"
-import Footer from "./Footer.vue"
+import { ref, onMounted } from "vue"
+
+
+const personalInfo = ref({ name: "", age: "" })
+const children = ref([])
+
+// загрузка данных из локального хранилища
+onMounted(() => {
+  const savedPersonalInfo = localStorage.getItem("personalInfo")
+  const savedChildren = localStorage.getItem("children")
+
+  if (savedPersonalInfo) {
+    personalInfo.value = JSON.parse(savedPersonalInfo)
+  }
+
+  if (savedChildren) {
+    children.value = JSON.parse(savedChildren)
+  }
+})
+
+const clearStorage = () => {
+  localStorage.clear()
+  personalInfo.value = { name: "", age: "" } // сбрасываем данные о пользователе
+  children.value = [] // сбрасываем данные о детях
+}
 </script>
 
 <style lang="scss" scoped>
@@ -61,7 +88,7 @@ import Footer from "./Footer.vue"
         align-items: center;
 
         border-radius: 5px;
-        background-color: #F1F1F1;
+        background-color: #f1f1f1;
 
         padding: 10px 20px;
 

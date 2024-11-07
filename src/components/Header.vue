@@ -48,9 +48,10 @@
       font-size: 1.1vw;
 
       color: #1111117a;
+      
       cursor: pointer;
-
       text-decoration: none;
+      user-select: none;
 
       &:hover {
         color: #111111;
