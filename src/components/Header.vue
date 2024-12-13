@@ -1,9 +1,5 @@
 <template>
   <div class="header">
-    <div class="header_logo">
-      <img src="../assets/logo.svg" alt="logo"  width="93" height="29"/>
-    </div>
-
     <div class="header_pages">
         <router-link to="/info-family" class="link">Форма</router-link>
         <router-link to="/preview" class="link">Превью</router-link>
@@ -20,6 +16,7 @@
 
   display: flex;
   align-items: center;
+  justify-content: center;
 
   border-bottom: 1px solid #e8e8e8;
 
@@ -44,7 +41,6 @@
     justify-content: space-around;
 
     position: relative;
-    margin-left: 35vw;
 
     .link {
       font-size: 1.1vw;
